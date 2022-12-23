@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/msd_song.schema.json",
+  "title": "A song from the Million Song Dataset",
+  "description": "Contains metadata about a song and the artist of that song.",
+  "type": "object",
+  "properties": {
+    "num_songs": {
+      "description": "Number of songs",
+      "type": "integer"
+    },
+    "artist_id": {
+      "description": "Artist ID",
+      "type": "string"
+    },
+    "artist_latitude": {
+      "description": "Artist Latitude",
+      "type": "number"
+    },
+    "artist_longitude": {
+      "description": "Artist Longitude",
+      "type": "number"
+    },
+    "artist_location": {
+      "description": "Artist Location",
+      "type": "string"
+    },
+    "artist_name": {
+      "description": "Artist Name",
+      "type": "string"
+    },      
+    "song_id": {
+      "description": "Song ID",
+      "type": "string"
+    },
+    "title": {
+      "description": "Song Title",
+      "type": "string"
+    },
+    "duration": {
+      "description": "Song duration in seconds",
+      "type": "number"
+    },
+    "year": {
+      "description": "Song release year",
+      "type": "integer"
+    }
+  },
+  "required": ["song_id"]
+}
